@@ -1,12 +1,13 @@
 <template>
-	<view class="layout">
-		<view class="box1">
-			box1
-		</view>
-		<view class="box2">
-			box2
+	<view class="box" hover-class="boxHover" hover-stay-time="0">
+		<view class="inner" hover-class="innerHover" hover-stop-propagation>
+			内部元素
 		</view>
 	</view>
+	<view>
+		---------------------
+	</view>
+	<text selectable="true" user-select>text文本标签内</text>
 </template>
 
 <script setup>
@@ -14,13 +15,5 @@
 </script>
 
 <style lang="scss">
-	.layout{
-		border: 1px solid red;
-		.box1{
-			border: 1px solid green;
-		}
-		.box2{
-			border: 1px solid blue;
-		}
-	}
+	
 </style>
